@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3{
+    color: #333;
+}
+
+
+
+
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: lightblue;
+}
+
+.header{
+    /*background-color: yellow;*/
+}
+
+
+.heading-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: red;*/
+}
+
+
+
+
+
+
+
+
+.input-container{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /*background-color: green;*/
+    padding: 10%;
+}
+
+
+.input{
+    border: 1px solid #333;
+    width: 200px;
+    padding: 2.5%;
+    text-align: center;
+    font-size: 25px;
+    background-color: transparent;
+    box-shadow: 3px 3px 3px #333;
+}
+
+
+
+.submit-btn{
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-top: 25px;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #333;
+    border: 1px solid #333;
+    background-color: lightcoral;
+
+    box-shadow: 3px 3px 3px;
+}
+
+
+
+
+
+/* Weather container  */
+
+.weather-container{     /* visualizzazione standard*/
+    /* border: 2px solid #333; */
+    height: 45%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    /* box-shadow: 3px 3px 3px; */
+}
+
+
+
+
+.city-name{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-bottom: 1px solid #333; */
+}
+
+#city-name-text{
+    text-align: center;
+    word-wrap: break-word;
+}
+
+
+.weather-condition{
+    flex: 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border-bottom: 1px solid #333; */
+}
+
+
+.weather-temperature{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-humidity{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+
+/* medium screens */
+@media(min-width: 600px){
+    
+    .weather-container{
+        width: 55%;
+    }
+}
+
+
+
+
+
+
+/* big screens */
+@media (min-width: 1000px){
+    
+    .weather-container{
+        width: 40%;
+    }
+}
+
+
+
+@media (min-width: 1250px){
+
+    .weather-container{
+        width: 30%;
+    }
+}
+
+
+/* large screens */
+@media (min-width: 1900px){
+    
+    .heading{
+        font-size: 45px;
+    }
+
+    .input{
+        font-size: 35px;
+        width: 300px;
+        padding: 4%;
+    }
+
+    .submit-btn{
+        font-size: 30px;
+        margin-top: 40px;
+        padding: 15px;
+    }
+
+    #city-name h2{
+        font-size: 35px;
+    }
+
+    #weather-img{
+        height: 80px;
+    }
+
+    .weather-condition h2{
+        font-size: 35px;
+    }
+
+    .weather-temperature h3, .weather-humidity h3{
+        font-size: 27px;
+    }
+
+
+    .weather-container{
+        width: 615px;
+        height: 500px;
+    }
+
+
+    .credit-container h3{
+        font-size: 25px;
+    }
+}
+
+
+@media (min-width: 1900px) and (max-height: 1100px){
+    .container{
+        height: 1100px;
+    }
+}
+
+
+
+
+/* ritocco resp */
+@media (max-height: 800px){
+    .container{
+        height: 800px;
+    }
+}
+
+
+@media (max-width: 450px){
+    #city-name-text, #weather-condition-text{
+        font-size: 18px;
+    }
+
+    #weather-temperature-text, #weather-humidity-text{
+        font-size: 15px;
+    }
+}
+
+
+/* when displaying weather data */
+
+.weather-container-activeMode{
+    border: 2px solid #333;
+    box-shadow: 3px 3px 3px;
+}
+
+.city-name-activeMode{
+    border-bottom: 1px solid #333;
+}
+
+.weather-condition-activeMode{
+    border-bottom: 1px solid #333;
+}
+
+
+
+
+
+
+/* INPUT ON ERROR */
+.input-on-error{
+    border: 1px solid red;
+    box-shadow: 3px 3px 3px red;
+}

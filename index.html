@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WEATHER APP</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    </head>
+
+
+
+    <body>
+        
+        <div class="container">
+
+            <!--Header-->
+            <div class="header">
+                <div class="heading-container">
+                    <h1 class="heading">WEATHER APP</h1>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="input" placeholder="Insert a city" class="input">
+                    <button class="submit-btn">Get Weather</button>
+                </div>
+            </div>
+
+
+            <!--Show Weather-->
+            <div class="weather-container" id="weather-container">
+                <div id="city-name" class="city-name">
+                    <h2 id="city-name-text"></h2>
+                </div>
+                <div id="weather-condition" class="weather-condition">
+                    <img src="" alt="" id="weather-img">
+                    <h2 id="weather-condition-text"></h2>
+                </div>
+                <div id="weather-temperature" class="weather-temperature">
+                    <h3 id="weather-temperature-text"></h3>
+                </div>
+                <div id="weather-humidity" class="weather-humidity">
+                    <h3 id="weather-humidity-text"></h3>
+                </div>
+            </div>
+
+
+            <!--Credit-->
+            <div class="credit-container">
+                <h3>
+                    Powered by <a href="https://www.weatherapi.com/" title="Free Weather API" target="_blank">WeatherAPI.com</a>
+                </h3>
+            </div>
+
+
+
+        </div>
+
+
+
+        <script src="main.js"></script>
+    </body>
+</html>
